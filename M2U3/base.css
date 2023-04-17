@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  background: #332f29;
+  font-size: 100%;
+}
+#contenedor {
+  max-width: 800px;
+  background: #8fa68e;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+nav {
+  background: #cc3910;
+  float: left;
+  width: 160px;
+  padding: 20px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: #f1f2c0;
+  text-decoration: none;
+}
+section {
+  background: #f1f2c0;
+  float: left;
+  margin: 0 0 0 25px;
+  width: 400px;
+  padding: 20px;
+}
+aside {
+  background: #ccc59e;
+  float: right;
+  width: 190px;
+  padding: 20px;
+}
+
+/* Agregamos mq */
+
+@media (max-width: 800px) {
+  nav,
+  section,
+  aside {
+    float: none;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid #000;
+  }
+
+  nav {
+    margin-top: 20px;
+    background-color: #ffd857;
+  }
+  nav ul li a {
+    color: #000;
+  }
+}
