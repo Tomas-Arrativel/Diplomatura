@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
+      }
+      .ejercicio1 div {
+        height: 150px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        cursor: pointer;
+        color: #fff;
+      }
+
+      .ejercicio1 div:first-child {
+        background-color: #1654f1;
+      }
+      .ejercicio1 div:nth-child(2) {
+        background-color: #03aa03;
+      }
+      .ejercicio1 div:last-child {
+        background-color: #d72d2d;
+      }
+
+      textarea {
+        resize: none;
+        height: 400px;
+        width: 500px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="ejercicio1">
+      <div>Azul</div>
+      <div>Verde</div>
+      <div>Rojo</div>
+    </section>
+
+    <section>
+      <textarea cols="30" rows="10"></textarea>
+    </section>
+
+    <script src="script/index.js"></script>
+  </body>
+</html>
